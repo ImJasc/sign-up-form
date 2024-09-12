@@ -1,5 +1,10 @@
 @import "modern-normalize";
 
+@font-face {
+    font-family: Norse;
+    src: url(Resources/Fonts/Norse-Bold.otf);
+}
+
 :root {
   line-height: 1.5;
 }
@@ -21,4 +26,43 @@ h1, h2, h3, h4, h5 {
 img {
   display: block;
   max-inline-size: 100%;
+}
+
+#mainDiv{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 60px;
+    height: 100vh;
+    align-items: center;
+}
+
+#headerDiv{
+    background-image: url("Resources/Images/halie-west-25xggax4bSA-unsplash.jpg");
+    max-width: 30%;
+    min-width: 30%;    
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-size: cover;
+}
+
+#logoDiv{
+    background: rgb(0, 0 ,0 , 60%);
+    max-height: 15vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-family: norse, sans-serif;
+    color: white;
+    font-size: 80px;
+    gap: 5px;
+}
+
+#logo{
+    max-height: 80%;
 }
