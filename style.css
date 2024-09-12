@@ -61,8 +61,20 @@ img {
     color: white;
     font-size: 80px;
     gap: 5px;
+    margin-bottom: 400px;
 }
 
 #logo{
     max-height: 80%;
+}
+
+#footerDiv{
+    position: absolute;
+    bottom: 0px;
+    color:  white;
+    font-size: 13px;
+}
+
+a{
+    color:white;
 }
