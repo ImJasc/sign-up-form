@@ -1,5 +1,3 @@
-@import "modern-normalize";
-
 @font-face {
     font-family: Norse;
     src: url(Resources/Fonts/Norse-Bold.otf);
@@ -81,10 +79,54 @@ a{
 
 #bodyDiv{
     max-width: 750px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;    
+    height: 100vh;
 }
 
-#textDiv>p{
-    font-weight: bolder;
-    font-family: sans-serif;
+#textDiv>p, #formDiv>p{
+    font-weight: 550;
+    font-family: 'Arial Narrow', Arial, sans-serif;
     font-size: 24px;
+}
+
+#formDiv>p{
+    margin-bottom: 15px;
+}
+
+.mainContainer{
+    display: flex;
+    gap: 70px;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+label{
+    font-size: 10px;
+    color: rgb(48, 48, 48);
+    font-family: 'Arial Narrow';
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+input{
+    width: 20em;
+    height: 1.5em;
+    border-radius: 5px;
+    box-shadow: none;     
+    border: 1px solid #E5E7EB;
+}
+
+input:focus{
+    outline: 1.5px solid #2f00ff;
+    box-shadow: 0px 2px 2px #a8a8a8;
+}
+
+input:invalid{
+    outline: 1.5px solid #ff0000;
 }
