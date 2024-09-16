@@ -91,6 +91,10 @@ a{
     font-size: 24px;
 }
 
+#formDiv{
+    margin-top: -10vh;
+}
+
 #formDiv>p{
     margin-bottom: 15px;
 }
@@ -98,7 +102,7 @@ a{
 #shadow{
     margin-top: -12vh;
     margin-left: -60px;
-    width: 100vw;
+    width: 70vw;
     height: 1vh;
     box-shadow: 0px 2px 1px #d6d6d6c7;
 }
@@ -131,10 +135,40 @@ input{
 }
 
 input:focus{
-    outline: 1.5px solid #2f00ff;
+    outline: 1.5px solid #596D48;
     box-shadow: 0px 2px 2px #a8a8a8;
 }
 
 input:invalid{
     outline: 1.5px solid #ff0000;
 }
+
+#buttonDiv{
+    display: flex;
+    flex-direction: column;
+    gap: 2.5vh;
+    margin-top: -11.5vh;
+}
+
+#signUpBtn{
+    border-radius: 6px;
+    height: 4vh;
+    width: 10vw;
+    background-color: #596D48;
+    color: #ffffff;
+    font-family: 'arial narrrow';
+    font-size: 16px;
+    font-weight: 600;  
+    transition: all .15s ease-in-out;    
+}
+
+#signUpBtn:hover{    
+    transform: scale(1.1);
+}
+
+#buttonDiv>p>a{
+    color:#596D48;
+    text-decoration: none;
+    font-weight: 600;
+}
+
